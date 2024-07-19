@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #202020;
+}
+
+header {
+    width: 100vw;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 90px;
+    color: rgb(193, 193, 193);
+}
+
+header h1 {
+    text-shadow: 2px 2px rgb(0, 122, 51);
+}
+
+main {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculadora{
+    width: 320px;
+    height: 400px;
+    background-color: #181515;
+    border: 3px solid rgb(0, 122, 51);
+    border-radius: 13px;
+    padding: 10px;
+    box-shadow: 0 0 20px rgb(0, 122, 51);
+}
+
+.resultado{
+    font-size: 26px;
+    color: #fff;
+    text-align: right;
+    padding: 10px;
+}
+
+#delete {
+    color: red;
+    text-transform: uppercase;
+}
+
+#C {
+    color: blue;
+    font-weight: bold;
+}
+
+#result {
+    color: yellow;
+}
+
+.container-botoes{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px 10px;
+    margin-top: 12px;
+}
+
+button{
+    cursor: pointer;
+    font-size: 18px;
+    padding: 10px;
+    border: 2px solid rgb(0, 122, 51);
+    border-radius: 5px;
+    background-color: black;
+    color: #fff;
+    box-shadow: 2px 2px 4px rgb(0, 122, 51);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover{
+    background-color: rgb(0, 122, 51);
+    color: rgb(255, 255, 255);
+}

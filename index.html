@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+    <title>Dev Calculadora</title>
+</head>
+<body>
+
+    <header>
+        <h1>Dev - Calculadora</h1>
+    </header>
+
+    <main>
+        <div class="calculadora">
+
+            <div class="resultado" id="resultado">0</div>
+    
+            <div class="container-botoes">
+                <button onclick="anexarResultado('&#40')">&#40</button>
+                <button onclick="anexarResultado('&#41')">&#41</button>
+                <button onclick="limparResultado()" id="C">C</button>
+                <button onclick="deletarUltimoDigito()" id="delete">Del</button>
+                <button onclick="anexarResultado('7'); playClickSound()">7</button>
+                <button onclick="anexarResultado('8')">8</button>
+                <button onclick="anexarResultado('9')">9</button>
+                <button onclick="anexarResultado('/')">/</button>
+                <button onclick="anexarResultado('4')">4</button>
+                <button onclick="anexarResultado('5')">5</button>
+                <button onclick="anexarResultado('6')">6</button>
+                <button onclick="anexarResultado('*')">x</button>
+                <button onclick="anexarResultado('1')">1</button>
+                <button onclick="anexarResultado('2')">2</button>
+                <button onclick="anexarResultado('3')">3</button>
+                <button onclick="anexarResultado('-')">-</button>
+                <button onclick="anexarResultado('0')">0</button>
+                <button onclick="anexarResultado('.')">.</button>
+                <button onclick="calcularResultado()" id="result">=</button>
+                <button onclick="anexarResultado('+')">+</button>
+            </div>
+
+        </div>
+    </main>
+    
+</body>
+</html>
